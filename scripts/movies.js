@@ -12,7 +12,7 @@ var inp =  document.querySelector("#search")
 
  async function   searchfunc(){
   var inputs =  document.querySelector("#search").value
-  var item= await  fetch(`http://www.omdbapi.com/?t=${inputs}&apikey=db27256e`)
+  var item= await  fetch(`https://www.omdbapi.com/?t=${inputs}&apikey=db27256e`)
  var data =await item.json()
  console.log(data)
  appenffunc(data)
